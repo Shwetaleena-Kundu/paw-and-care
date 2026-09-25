@@ -1,0 +1,508 @@
+/* TABLET */
+@media (max-width: 1100px) {
+  .container {
+    width: min(100% - 64px, 1320px);
+  }
+
+  .section {
+    padding-block: 85px;
+  }
+
+  .navbar {
+    gap: 18px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero-inner {
+    min-height: 560px;
+    grid-template-columns: 53% 47%;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.8rem, 7.1vw, 6.3rem);
+  }
+
+  .hero-visual {
+    min-height: 560px;
+    margin-right: -32px;
+  }
+
+  .hero-video {
+    min-height: 560px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .service-image {
+    flex-basis: 260px;
+    height: 260px;
+  }
+
+  .service-card-content {
+    min-height: 180px;
+  }
+
+  .about-layout {
+    grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
+    gap: 30px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .contact-layout {
+    gap: 45px;
+  }
+}
+
+/* MOBILE NAVIGATION AND STACKED LAYOUT */
+@media (max-width: 767px) {
+  .container {
+    width: min(100% - 40px, 600px);
+  }
+
+  .section {
+    padding-block: 72px;
+  }
+
+  .navbar {
+    min-height: 72px;
+    gap: 14px;
+  }
+
+  .brand {
+    font-size: 1.45rem;
+  }
+
+  .brand-paw {
+    font-size: 1.45rem;
+  }
+
+  .menu-toggle {
+    position: relative;
+    z-index: 22;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid #d9ddf2;
+    border-radius: 12px;
+    background: var(--white);
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--blue-dark);
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px 20px 22px;
+    background: var(--cream);
+    box-shadow: 0 16px 24px rgba(16, 27, 72, 0.12);
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 14px 8px;
+    font-size: 1rem;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-links a:hover {
+    color: var(--blue);
+  }
+
+  .nav-cta {
+    min-height: 44px;
+    padding-inline: 16px;
+    font-size: 0.82rem;
+  }
+
+  /* HERO */
+
+  .hero-inner {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-content {
+    padding-block: 56px 42px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.7rem, 10.5vw, 6.2rem);
+  }
+
+  .hero-content > p {
+    max-width: 470px;
+    margin-top: 24px;
+    font-size: 1rem;
+  }
+
+  .hero-note {
+    margin-left: 20px;
+  }
+
+  .hero-visual {
+    width: calc(100% + 40px);
+    height: 390px;
+    min-height: 0;
+    margin-right: 0;
+    margin-left: -20px;
+    border-radius: 35% 0 0 0 / 22% 0 0 0;
+  }
+
+  .hero-visual::before {
+    top: -100px;
+    left: -100px;
+  }
+
+  .hero-visual::after {
+    right: -100px;
+    bottom: -125px;
+  }
+
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+  }
+
+  .video-toggle {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .hero-doodle-one {
+    font-size: 3.5rem;
+  }
+
+  .hero-doodle-two {
+    font-size: 3rem;
+  }
+
+  /* SERVICES */
+
+  .section-heading {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .services-heading h2 {
+    max-width: 600px;
+    font-size: clamp(2.7rem, 7vw, 4.3rem);
+  }
+
+  .services-heading > p {
+    max-width: 520px;
+    margin-top: 18px;
+  }
+
+  .services-grid {
+    gap: 16px;
+  }
+
+  .service-image {
+    flex-basis: 210px;
+    height: 210px;
+  }
+
+  .service-card-content {
+    min-height: 200px;
+    padding: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.55rem;
+  }
+
+  /* ABOUT */
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about h2 {
+    font-size: clamp(2.8rem, 7vw, 4.4rem);
+  }
+
+  .benefits-grid {
+    margin-top: 38px;
+  }
+
+  .about-image {
+    width: min(100%, 470px);
+    height: 380px;
+    justify-self: center;
+  }
+
+  /* CONTACT */
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact h2 {
+    max-width: 650px;
+    font-size: clamp(3rem, 8vw, 4.8rem);
+  }
+
+  .contact-image {
+    height: 245px;
+    margin-top: 30px;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* FOOTER */
+
+  .footer-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 520px) {
+  .container {
+    width: min(100% - 32px, 480px);
+  }
+
+  .section {
+    padding-block: 60px;
+  }
+
+  .navbar {
+    min-height: 68px;
+  }
+
+  .brand {
+    gap: 5px;
+    font-size: 1.3rem;
+  }
+
+  .brand-paw {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    top: 68px;
+  }
+
+  .nav-cta {
+    min-height: 40px;
+    gap: 6px;
+    padding-inline: 12px;
+    font-size: 0.72rem;
+  }
+
+  /* HERO */
+
+  .hero-content {
+    padding-block: 48px 35px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.25rem, 11.8vw, 4.4rem);
+    letter-spacing: -0.06em;
+  }
+
+  .hero-content > p {
+    margin: 22px 0;
+    font-size: 0.98rem;
+  }
+
+  .hero-note {
+    max-width: 90px;
+    margin-left: 12px;
+    font-size: 0.86rem;
+  }
+
+  .hero-visual {
+    width: calc(100% + 32px);
+    height: 310px;
+    margin-left: -16px;
+  }
+
+  .hero-visual::before {
+    top: -120px;
+    left: -120px;
+  }
+
+  .hero-visual::after {
+    width: 210px;
+    height: 170px;
+  }
+
+  .video-toggle {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  /* SERVICES */
+
+  .services-heading h2 {
+    font-size: clamp(2.65rem, 9vw, 3.6rem);
+  }
+
+  .services-heading > p {
+    font-size: 0.96rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-image {
+    flex-basis: 250px;
+    height: 250px;
+  }
+
+  .service-card-content {
+    min-height: 175px;
+    padding: 22px;
+  }
+
+  .service-card h3 {
+    font-size: 1.7rem;
+  }
+
+  /* ABOUT */
+
+  .about h2 {
+    font-size: clamp(2.65rem, 9vw, 3.6rem);
+  }
+
+  .benefits-grid {
+    gap: 26px 18px;
+  }
+
+  .benefit-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 12px;
+  }
+
+  .benefit h3 {
+    font-size: 1.05rem;
+  }
+
+  .benefit p {
+    font-size: 0.85rem;
+  }
+
+  .about-image {
+    height: 320px;
+  }
+
+  /* CONTACT */
+
+  .contact h2 {
+    font-size: clamp(3rem, 10vw, 4rem);
+  }
+
+  .contact-content > p:not(.eyebrow) {
+    font-size: 0.98rem;
+  }
+
+  .contact-image {
+    height: 210px;
+  }
+
+  .contact-form {
+    gap: 15px;
+    padding: 23px;
+    border-radius: 20px;
+  }
+
+  /* FOOTER */
+
+  .site-footer {
+    padding-top: 50px;
+  }
+
+  .footer-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.78rem;
+  }
+}
+
+/* EXTRA-NARROW PHONES */
+@media (max-width: 360px) {
+  .nav-cta {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 3.05rem;
+  }
+
+  .hero-note {
+    display: block;
+    max-width: none;
+    margin: 20px 0 0;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
