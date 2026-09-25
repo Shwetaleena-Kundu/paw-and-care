@@ -1,24 +1,47 @@
-# Paw & Care
+# Paw & Care 🐾
 
-Paw & Care is a responsive landing page for a fictional pet grooming and daycare business. It presents the business's services and gives visitors a way to start an enquiry through WhatsApp.
+A playful, responsive landing page for a fictional pet grooming and daycare studio. Paw & Care introduces its services, shows its personality through pet photography and a hero video, and makes it easy for visitors to enquire through WhatsApp.
+
+## Live Website
+
+🔗 **[Visit Paw & Care]((https://vercel.com/shwetaleena-kundu/paw-and-care)**
+
+## Preview
+
+### Desktop landing page
+![Paw & Care desktop landing page](screenshots/landing-page.jpeg)
+
+### Mobile landing page
+![Paw & Care mobile landing page](screenshots/landing-page-mobile.jpeg)
+
 
 ## Features
 
-- Responsive layout for desktop, tablet, and mobile
-- Mobile navigation menu
+- Responsive single-page layout for desktop, tablet, and mobile
+- Mobile navigation with accessible open and close controls
 - Hero video with a play/pause button
-- Grooming, daycare, bath and brush, and pet sitting service cards
-- Contact form with required fields and HTML validation
-- WhatsApp enquiry with a prefilled message
-- Floating WhatsApp and call links
-- Smooth section navigation
-- Visible keyboard focus states and reduced-motion support
+- Four pet care services: Grooming, Daycare, Bath & Brush, and Pet Sitting
+- Smooth navigation between page sections
+- Enquiry form with HTML validation
+- Form details prepared as a WhatsApp message
+- Floating WhatsApp and call buttons
+- Keyboard focus styles and reduced-motion support
 
-## Built With
+## Tech Stack
 
-- HTML5
-- CSS3, Flexbox, and CSS Grid
-- JavaScript
+**HTML5 · CSS3 · JavaScript**
+
+The layout uses CSS Grid and Flexbox. The site does not require a framework or build step.
+
+## How the Contact Form Works
+
+After completing the form, the visitor is taken to WhatsApp with their enquiry already written. They must press **Send** in WhatsApp to deliver it. The floating call button opens the phone dialer on supported devices.
+
+## Run Locally
+
+1. Download or clone this repository.
+2. Open the project folder in VS Code.
+3. Open `index.html` with Live Server, or open it directly in a browser.
 
 ## Project Structure
 
@@ -40,3 +63,12 @@ Paw-and-care/
 │   └── contact-form.jpeg
 ├── index.html
 └── README.md
+```
+
+## About This Project
+
+Built for **Task 2: Responsive Business Landing Page** of the Week 1 web development assessment. The goal was to create a clear business landing page with a navigation bar, hero, services, contact form, and a layout that remains usable on smaller screens.
+
+---
+
+Designed and developed by **Shwetaleena Kundu**.
