@@ -4,7 +4,7 @@ A playful, responsive landing page for a fictional pet grooming and daycare stud
 
 ## Live Website
 
-🔗 **[Visit Paw & Care]((https://vercel.com/shwetaleena-kundu/paw-and-care)**
+🔗 **[Visit Paw & Care](https://paw-and-care-lovat.vercel.app/)**
 
 ## Preview
 
@@ -13,6 +13,12 @@ A playful, responsive landing page for a fictional pet grooming and daycare stud
 
 ### Mobile landing page
 ![Paw & Care mobile landing page](screenshots/landing-page-mobile.jpeg)
+
+### Services
+![Four pet care service cards](screenshots/services.jpg)
+
+### Contact form
+![Pet care enquiry form](screenshots/contact-form.jpg)
 
 
 ## Features
@@ -59,8 +65,8 @@ Paw-and-care/
 ├── screenshots/
 │   ├── landing-page.jpeg
 │   ├── landing-page-mobile.jpeg
-│   ├── services.jpeg
-│   └── contact-form.jpeg
+│   ├── services.jpg
+│   └── contact-form.jpg
 ├── index.html
 └── README.md
 ```
